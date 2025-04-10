@@ -21,7 +21,7 @@ jobs:
 
       - name: Convert CSV to JSON
         run: |
-          python csv_to_json.py materials.csv materials.json
+          python data-translation.py materials.csv materials.json
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
