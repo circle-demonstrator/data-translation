@@ -23,7 +23,7 @@ jobs:
         run: |
           python data-translation.py materials.csv materials.json
 
-      - name: Deploy to GitHub Pages
+      - name: Move translated data
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
